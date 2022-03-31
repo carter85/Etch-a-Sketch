@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      body {
+        background-color: #23012c;
+        margin: 0 auto;
+      }
+      #mainContainer {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      }
+      #sizes {
+        margin: 0 auto;
+        display: flex;
+      }
+      #clearBox {
+        padding: 10px;
+      }
+    #blockContainer {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #443474;
+        width: 800px;
+        height: 800px;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+    .column:hover {
+      background-color: #da9c51;
+    }
+    .column {
+        background-color: #443474;
+        display: flex;
+        flex-grow: 1;
+    }
+    .yellow {
+      background-color: #da9c51;
+    }
+    </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div id="mainContainer">
+
+      <div id="sizes">
+        <button id="clearBox" onclick="setSize()">Press To Clear Area</button>
+      </div>
+      <div id="blockContainer"></div>
+      
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
